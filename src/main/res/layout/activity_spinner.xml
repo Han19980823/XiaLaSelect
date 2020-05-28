@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SpinnerActivity">
+
+    <!--注意entries属性，是添加资源，这样java代码中就不需要进行添加资源的操作。
+    当然，你也可以在java代码中做添加资源的操作-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:layout_width="wrap_content"
+        android:background="@drawable/round_corner_line_radius_3dp"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:entries="@array/city"
+            android:spinnerMode="dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:layout_centerInParent="true"
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>
